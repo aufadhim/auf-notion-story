@@ -1,10 +1,10 @@
 {
-  "name": "nexon",
+  "name": "blog",
   "version": "2.0.0",
   "private": true,
   "description": "The perfect starter kit for building beautiful websites with Next.js and Notion.",
-  "author": "Feng Kaiyu <loveress01@outlook.com>",
-  "repository": "fky2015/nexon",
+  "author": "auf",
+  "repository": "aufadhim/auf-notion-story",
   "license": "MIT",
   "engines": {
     "node": ">=16"
