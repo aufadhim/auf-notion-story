@@ -6,10 +6,10 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaRss } from '@react-icons/all-files/fa/FaRss'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+// import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+// import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 
-import { useDarkMode } from 'lib/use-dark-mode'
+// import { useDarkMode } from 'lib/use-dark-mode'
 import * as config from 'lib/config'
 
 import styles from './styles.module.css'
@@ -19,16 +19,16 @@ import styles from './styles.module.css'
 const year = new Date().getFullYear()
 
 export const FooterImpl: React.FC = () => {
-  const [hasMounted, setHasMounted] = React.useState(false)
-  const { isDarkMode, toggleDarkMode } = useDarkMode()
+  // const [hasMounted, setHasMounted] = React.useState(false)
+  // const { isDarkMode, toggleDarkMode } = useDarkMode()
 
-  const onToggleDarkMode = React.useCallback(
-    (e) => {
-      e.preventDefault()
-      toggleDarkMode()
-    },
-    [toggleDarkMode]
-  )
+  // const onToggleDarkMode = React.useCallback(
+  //   (e) => {
+  //     e.preventDefault()
+  //     toggleDarkMode()
+  //   },
+  //   [toggleDarkMode]
+  // )
 
   React.useEffect(() => {
     setHasMounted(true)
@@ -38,7 +38,7 @@ export const FooterImpl: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.copyright}>Copyright {year} {config.author}</div>
 
-      <div className={styles.settings}>
+      {/* <div className={styles.settings}>
         {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -50,7 +50,7 @@ export const FooterImpl: React.FC = () => {
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
         )}
-      </div>
+      </div> */}
 
       <div className={styles.social}>
         <a
