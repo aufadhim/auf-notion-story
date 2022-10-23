@@ -6,10 +6,10 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaRss } from '@react-icons/all-files/fa/FaRss'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-// import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-// import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 
-// import { useDarkMode } from 'lib/use-dark-mode'
+import { useDarkMode } from 'lib/use-dark-mode'
 import * as config from 'lib/config'
 
 import styles from './styles.module.css'
@@ -20,14 +20,14 @@ const year = new Date().getFullYear()
 
 export const FooterImpl: React.FC = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
-  // const { isDarkMode, toggleDarkMode } = useDarkMode()
+  const { isDarkMode, toggleDarkMode } = useDarkMode()
 
   const onToggleDarkMode = React.useCallback(
     (e) => {
       e.preventDefault()
-      // toggleDarkMode()
+      toggleDarkMode()
     },
-    // [toggleDarkMode]
+    [toggleDarkMode]
   )
 
   React.useEffect(() => {
@@ -47,7 +47,7 @@ export const FooterImpl: React.FC = () => {
             onClick={onToggleDarkMode}
             title='Toggle dark mode'
           >
-            {/* {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />} */}
+            {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
         )}
       </div>
