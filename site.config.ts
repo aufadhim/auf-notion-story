@@ -59,8 +59,8 @@ export default siteConfig({
     inputPosition:"bottom",
     theme:"light",
     lang:"en",
-    loading:"lazy",
-    crossorigin:"anonymous",
+    // loading:"lazy",
+    // crossorigin:"anonymous",
   },
   // whether or not to enable support for LQIP preview images (optional)
   isPreviewImageSupportEnabled: true,
