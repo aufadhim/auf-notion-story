@@ -143,11 +143,11 @@
 }
 
 .notion-page {
-  @apply px-0 sm:px-2;
+  @apply px-5 sm:px-2;
 }
 
 .notion-text {
-  @apply px-2;
+  @apply px-1;
 }
 
 .notion .notion-page-icon-cover {
@@ -339,6 +339,15 @@
 
 .notion-row {
   overflow: unset;
+  /* display: grid;
+  grid-template-columns: auto auto; */
+}
+
+@media (max-width: 640px) {
+  .notion-row {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 .notion-block-f382a57807bc40779860eb079d0144f2 img.medium-zoom-image {
